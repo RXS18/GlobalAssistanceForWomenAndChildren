@@ -20,11 +20,14 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center cursor-pointer" onClick={() => onNavigate('/')}>
             <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">GAW&C</span>
+              <img 
+            	src="/GWA&CLogo.png"       // <-- replace with your actual logo path
+            	alt="Logo"
+          	/>
             </div>
             <div className="ml-3 hidden md:block">
               <h1 className="text-sm font-semibold text-gray-900">Global Assistance For</h1>
