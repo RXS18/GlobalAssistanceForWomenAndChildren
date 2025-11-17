@@ -25,7 +25,7 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
           <div className="flex items-center cursor-pointer" onClick={() => onNavigate('/')}>
             <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center">
               <img 
-            	src="/GWA&CLogo.png"       // <-- replace with your actual logo path
+            	src={import.meta.env.BASE_URL + "/GWA&CLogo.png"}        // <-- replace with your actual logo path
             	alt="Logo"
           	/>
             </div>
